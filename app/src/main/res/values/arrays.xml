@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day">선택</string>
+    <string-array name="day_array">
+        <item>일-토</item>
+        <item>월-토</item>
+        <item>월-금</item>
+        <item>토-일</item>
+    </string-array>
+</resources>

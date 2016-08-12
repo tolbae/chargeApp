@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/icon_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_scooter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:hint="장소이름"
+            android:textColor="#666666"
+            android:textColorHint="#666666"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:hint="주소"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/address_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="(000000)"
+                android:textColor="#55aaff"
+                android:textColorHint="#55aaff"
+                android:textSize="14dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:hint="0m"
+        android:textColorHint="#777777"
+        android:textSize="14dp"
+        android:textColor="#777777"/>
+
+</LinearLayout>
